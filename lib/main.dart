@@ -1,23 +1,26 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'CapsGamePage.dart';
+
 
 void main() {
   return runApp(
     MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.pink[100],
         appBar: AppBar(
-          title: Text('Dicee'),
+          title: Center(
+              child: Text(
+                  'Player1 VS Player2',
+              ),
+          ),
           backgroundColor: Colors.red,
         ),
-        body: DicePage(),
+        body: CapsGamePage(),
       ),
     ),
   );
 }
 
-class DicePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
+
